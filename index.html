@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Visual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Agenda Visual</h1>
+    <p>Organize sua rotina com ícones e cores</p>
+  </header>
+
+  <main>
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Nome da tarefa" required />
+      <input type="time" id="taskTime" required />
+      <select id="taskIcon">
+        <option value="🛁">Banho</option>
+        <option value="🍽️">Refeição</option>
+        <option value="📚">Estudo</option>
+        <option value="🧸">Brincar</option>
+        <option value="😴">Dormir</option>
+      </select>
+      <input type="color" id="taskColor" value="#a3d5ff" />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section id="taskList"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
